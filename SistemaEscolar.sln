@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{6BA8B057-D94C-46AD-91A6-9E12FC501514}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EscolarBlazor", "EscolarBlazor\EscolarBlazor.csproj", "{BC53A706-BBBD-4A78-B742-6BF9CE1C7A2F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BA8B057-D94C-46AD-91A6-9E12FC501514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BA8B057-D94C-46AD-91A6-9E12FC501514}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BA8B057-D94C-46AD-91A6-9E12FC501514}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BA8B057-D94C-46AD-91A6-9E12FC501514}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC53A706-BBBD-4A78-B742-6BF9CE1C7A2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC53A706-BBBD-4A78-B742-6BF9CE1C7A2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC53A706-BBBD-4A78-B742-6BF9CE1C7A2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC53A706-BBBD-4A78-B742-6BF9CE1C7A2F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {513A034B-53A7-4030-80C7-533BB9CA758D}
+	EndGlobalSection
+EndGlobal
