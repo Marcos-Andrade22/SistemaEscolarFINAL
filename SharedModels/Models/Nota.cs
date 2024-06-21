@@ -3,7 +3,7 @@
     public class Nota
     {
         public int Id { get; set; }
-        public int Valor { get; set; }
+        public float Valor { get; set; }
 
         // Chaves estrangeiras
         public int AlunoId { get; set; }

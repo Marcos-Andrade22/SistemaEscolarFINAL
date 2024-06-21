@@ -1,5 +1,52 @@
-﻿<h3>Dashboard</h3>
+﻿@page "/dashboard"
+@inject AlunoService AlunoService
+@inject TurmaService TurmaService
+@inject ProfessorService ProfessorService
+
+<h3>Dashboard</h3>
+
+@if (alunos == null || turmas == null || professores == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div>
+        <h4>Alunos</h4>
+        <ul>
+            @foreach (var aluno in alunos)
+            {
+                <li>@aluno.Nome</li>
+            }
+        </ul>
+
+        <h4>Turmas</h4>
+        <ul>
+            @foreach (var turma in turmas)
+            {
+                <li>@turma.Nome</li>
+            }
+        </ul>
+
+        <h4>Professores</h4>
+        <ul>
+            @foreach (var professor in professores)
+            {
+                <li>@professor.Nome</li>
+            }
+        </ul>
+    </div>
+}
 
 @code {
+    private List<Aluno> alunos;
+    private List<Turma> turmas;
+    private List<Professor> professores;
 
+    protected override async Task OnInitializedAsync()
+    {
+        alunos = await AlunoService.GetAlunosAsync();
+        turmas = await TurmaService.GetTurmasAsync();
+        professores = await ProfessorService.GetProfessoresAsync();
+    }
 }
