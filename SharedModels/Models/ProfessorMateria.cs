@@ -1,4 +1,4 @@
-﻿namespace WebAPI.Models
+﻿namespace SharedModels.Models
 {
     public class ProfessorMateria
     {
